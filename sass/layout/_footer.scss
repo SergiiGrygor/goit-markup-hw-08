@@ -1,0 +1,32 @@
+.footer {
+    padding: 60px 0px;
+    background-color: var(--secondary-background);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
+
+/* join-social */
+.footer-social {
+    margin-right: 93px;
+}
+
+.join-social {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-clr);
+}
+

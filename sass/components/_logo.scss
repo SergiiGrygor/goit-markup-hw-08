@@ -1,0 +1,22 @@
+.logo {
+
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.19;
+    &--in-header {
+            margin-right: 93px;
+            color: #000000;
+        }
+    
+        &--in-footer {
+            display: block;
+            color: var(--white-clr);
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+    
+        &__web {
+            color: var(--accent-clr);
+        }
+}
+

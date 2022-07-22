@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--basic-clr);
+    background-color: var(--basic-background);
+    &.no-scroll {
+            overflow: hidden;
+        }
+}
+
+

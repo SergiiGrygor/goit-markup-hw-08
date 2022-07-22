@@ -1,0 +1,29 @@
+.address {
+    font-style: normal;
+
+    &__item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    
+    
+        &__link {
+            font-size: 14px;
+            line-height: 1.71;
+            color: var(--white-clr);
+        }
+    
+        &__item {
+            line-height: 1.71;
+            color: rgba(255, 255, 255, 0.6);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__item:hover,
+        &__item:focus {
+            color: var(--accent-clr);
+    
+        }
+}
+

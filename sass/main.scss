@@ -1,0 +1,35 @@
+// utils Styles
+@import"./utils/variables";
+@import"./utils/visually-hidden";
+@import"./utils/placeholder";
+
+// base styles
+@import"./base/module";
+
+// components
+@import"./components/section";
+@import"./components/buttons";
+@import"./components/container";
+@import"./components/logo";
+@import"./components/modal-window/module";
+@import"./components/section-title";
+@import"./components/social-media";
+@import"./components/project-overlay";
+@import"./components/filters";
+@import"./components/address";
+@import"./components/submit";
+@import"./components/card-set";
+
+
+// layout
+@import"./layout/header";
+@import"./layout/hero";
+@import"./layout/feature";
+@import"./layout/about";
+@import"./layout/team";
+@import"./layout/client";
+@import"./layout/project";
+@import"./layout/footer";
+
+
+

@@ -1,0 +1,112 @@
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation */
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__item {
+            position: relative;
+        }
+
+    &__item:not(:last-child) {
+            margin-right: 40px;
+        }
+    
+    &__list {
+            display: flex;
+        }
+
+    &__link:not(:last-child) {
+    margin-right: 40px;
+}
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.42;
+        letter-spacing: 0.02em;
+        color: var(--basic-clr);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        display: block;
+        }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-clr);
+        }
+}
+
+
+
+.curent.nav__link{
+        color: var(--accent-clr);
+    
+    
+}
+.curent{
+    &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            right: 0;
+            background-color: var(--accent-clr);
+            border-radius: 2px;
+        }
+}
+
+/* contacts */
+.contacts {
+    display: flex;
+    margin-left: auto;
+              
+    &__item:not(:last-child) {
+            margin-right: 50px;
+        }
+    
+    &__icons {
+            margin-right: 10px;
+            fill: var(--secondary-clr);
+        }
+    
+    
+    &__link {
+            display: flex;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.42;
+            letter-spacing: 0.02em;
+            color: var(--secondary-clr);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+    &__link:hover,
+    &__link:focus {
+            color: var(--accent-clr)
+        }
+}
+
+ 
+
+ .contacts__link:hover .contacts__icons,
+ .contacts__link:focus .contacts__icons {
+      fill: var(--accent-clr);
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
