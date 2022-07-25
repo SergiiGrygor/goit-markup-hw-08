@@ -1,8 +1,6 @@
 // utils Styles
 @import"./utils/variables";
 @import"./utils/visually-hidden";
-@import"./utils/placeholder";
-
 // base styles
 @import"./base/module";
 
@@ -19,17 +17,15 @@
 @import"./components/address";
 @import"./components/submit";
 @import"./components/card-set";
+@import"./components/mobile-menu";
 
 
 // layout
 @import"./layout/header";
-@import"./layout/hero";
+@import"../sass/layout/hero";
 @import"./layout/feature";
 @import"./layout/about";
 @import"./layout/team";
 @import"./layout/client";
 @import"./layout/project";
 @import"./layout/footer";
-
-
-

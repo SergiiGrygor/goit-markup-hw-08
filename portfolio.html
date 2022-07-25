@@ -22,35 +22,91 @@
 <body>
     <!--Верхняя линия -->
     <header class="header">
-        <div class="container header-container">
-            <!-- navigation -->
-            <nav class="nav">
-                <a class="logo logo--in-header link" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
-                <ul class="nav__list list">
-                    <li class="nav__item"><a class="nav__link link" href="./index.html">Студия</a></li>
-                    <li class="nav__item"><a class="nav__link curent link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+        <header class="header">
+            <div class="container header-container">
+        
+                <!-- navigation -->
+        
+                <nav class="nav">
+                    <a class="logo logo--in-header link" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
+                    <ul class="nav__list list">
+                        <li class="nav__item">
+                            <a class="nav__link  link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link curent link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- contacts -->
+        
+                <ul class="contacts list">
+                    <li class="contacts__item">
+                        <a class="contacts__link link" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icons" width="16px" height="12px">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link link" href="tel:+380961111111">
+                            <svg class="contacts__icons" width="10px" height="16px">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+380961111111
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <!-- contacts -->
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a class="contacts__link link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icons" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link link" href="tel:+380961111111">
-                        <svg class="contacts__icons" width="10px" height="16px">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>+380961111111
-                    </a>
+        
+                <!-- mobile-menu-btn -->
+                <button class="mobile-menu-btn" type="button" data-menu-button>
+                    <svg class="mobile-menu-icon" width="24" height="16">
+                        <use class="mobile-menu-burger" href="./images/icons.svg#icon-mob-burger_24px"></use>
+                        <use class="mobile-menu-close" href="./images/icons.svg#icon-mob-close_24px"></use>
+                    </svg>
+                </button>
 
-                </li>
-            </ul>
-        </div>
+                <div class="mobile-menu" data-menu>
+                    <ul class="mobile-menu-nav list">
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-nav-link link " href="./index.html">Студия </a>
+                        </li>
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-nav-link current link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-nav-link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                
+                    <ul class="mobile-menu-contacts list">
+                        <li class="mobile-menu-contacts-item">
+                            <a class="link mobile-menu-contacts--tel accent" href="tel:+380961111111"> +38 096 111 11 11 </a>
+                        </li>
+                        <li class="mobile-menu-contacts-item">
+                            <a class="link mobile-menu-contacts--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                
+                    <ul class="mobile-menu-socials list">
+                        <li class="mobile-menu-socials-item">
+                            <a class="mobile-menu-socials-link link" href=""> Instagram </a>
+                        </li>
+                        <li class="mobile-menu-socials-item">
+                            <a class="mobile-menu-socials-link link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu-socials-item">
+                            <a class="mobile-menu-socials-link link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu-socials-item">
+                            <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
     </header>
     <!-- main -->
     <main>
@@ -80,8 +136,27 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img class="project__img" src="./images/portfolio/project-tehnokryak-1.jpg"
-                                    alt="технокряк" width="370" height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_01_deck_texno.webp 1x,
+                                    ./images/portfolio/project/deck/project_01_deck_texno@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" 
+                                    srcset="./images/portfolio/project/deck/project_01_deck_texno.jpg 1x, 
+                                    ./images/portfolio/project/deck/project_01_deck_texno@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-01-techno-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-01-techno-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-01-techno-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-01-techno-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-01-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-01-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-01-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-01-mob@2x.jpg 2x" type="image/jpg">
+                                    <img class="project__img" src="images/portfolio/project/mobile/project-01-mob.jpg" alt="технокряк" width="450"
+                                        height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все
@@ -99,8 +174,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/project-poster-2.jpg" alt="постер" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_02_deck_neworlean.webp 1x,
+                                    ./images/portfolio/project/deck/project_02_deck_neworlean@2x.webp" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_02_deck_neworlean.jpg 1x,
+                                    ./images/portfolio/project/deck/project_02_deck_neworlean@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-02-neworlean-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-02-neworlean-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-02-neworlean-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-02-neworlean-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-02-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-02-mob@2x.jpg 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-02-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-02-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-02-mob.jpg" alt="постер" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -116,8 +208,24 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/projec-seafood-3.jpg" alt="Ресторан" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_03_deck_seafood.webp 1x,
+                                    ./images/portfolio/project/deck/project_03_deck_seafood@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_03_deck_seafood.jpg 1x,
+                                    ./images/portfolio/project/deck/project_03_deck_seafood@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-03-seafood-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-03-seafood-tab@2x.webp" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-03-seafood-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-03-seafood-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="images/portfolio/project/mobile/project-03-mob.webp./ 1x,
+                                     ./images/portfolio/project/mobile/project-03-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-03-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-03-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-03-mob.jpg" alt="Ресторан" width="450" height="294">
+                                </picture>
                                 <p class="overlay__item">
 
                                 </p>
@@ -133,8 +241,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/project-prime-4.jpg" alt="Проект Prime" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_04_deck_prime.webp 1x,
+                                    ./images/portfolio/project/deck/project_04_deck_prime@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_04_deck_prime.jpg 1x,
+                                    ./images/portfolio/project/deck/project_04_deck_prime@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-04-pime-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-04-pime-tab@2x.webp" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-04-pime-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-04-pime-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-04-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-04-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-04-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-04-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-04-mob.jpg" alt="Проект Prime" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -150,7 +275,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/project-boxes-5.jpg" alt="" width="370" height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_05_deck_boxes.webp 1x,
+                                    ./images/portfolio/project/deck/project_05_deck_boxes@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_05_deck_boxes.jpg 1x,
+                                    ./images/portfolio/project/deck/project_05_deck_boxes@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-05-boxes-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-05-boxes-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-05-boxes-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-05-boxes-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-05-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-05-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-05-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-05-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-05-mob.jpg" alt="" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -166,7 +309,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/project-noborders-6.jpg" alt="" width="370" height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_06_deck_borders.webp 1x,
+                                    ./images/portfolio/project/deck/project_06_deck_borders@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_06_deck_borders.jpg 1x,
+                                    ./images/portfolio/project/deck/project_06_deck_borders@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-06-borders-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-06-borders-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-06-borders-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-06-borders-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-06-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-06-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset=".images/portfolio/project/mobile/project-06-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-06-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src=".images/portfolio/project/mobile/project-06-mob.jpg" alt="" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -180,7 +341,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/project-le-7.jpg" alt="" width="370" height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_07_deck_limited.webp 1x,
+                                    ./images/portfolio/project/deck/project_07_deck_limited@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_07_deck_limited.jpg 1x,
+                                    ./images/portfolio/project/deck/project_07_deck_limited@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-07-limited-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-07-limited-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-07-limited-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-07-limited-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-07-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-07-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-07-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-07-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-07-mob.jpg" alt="" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -195,7 +374,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/project-lab-8.jpg" alt="" width="370" height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_08_deck_lab.webp 1x,
+                                    ./images/portfolio/project/deck/project_08_deck_lab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_08_deck_lab.jpg 1x,
+                                    ./images/portfolio/project/deck/project_08_deck_lab@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-08-lab-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-08-lab-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-08-lab-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-08-lab-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-08-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-08-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-08-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-08-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-08-mob.jpg" alt="" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -211,7 +408,25 @@
                     <li class="card-set__item">
                         <a class="project__item link" href="">
                             <div class="overlay">
-                                <img src="./images/portfolio/growing-bussines-9.jpg" alt="" width="370" height="294">
+                                <picture>
+                                    <!-- deck -->
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_09_deck_growing.webp 1x,
+                                    ./images/portfolio/project/deck/project_09_deck_growing@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:1200px )" srcset="./images/portfolio/project/deck/project_09_deck_growing.jpg 1x,
+                                    ./images/portfolio/project/deck/project_09_deck_growing@2x.jpg 2x" type="image/jpg">
+                                    <!-- tablet -->
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-09-growing-tab.webp 1x,
+                                    ./images/portfolio/project/tablet/profect-09-growing-tab@2x.webp 2x" type="image/webp">
+                                    <source media="(min-width:768px )" srcset="./images/portfolio/project/tablet/profect-09-growing-tab.jpg 1x,
+                                    ./images/portfolio/project/tablet/profect-09-growing-tab@2x.jpg 2x" type="image/jpg">
+                                    <!-- mobile -->
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-09-mob.webp 1x,
+                                    ./images/portfolio/project/mobile/project-09-mob@2x.webp 2x" type="image/webp">
+                                    <source media="(max-width:767px )" srcset="./images/portfolio/project/mobile/project-09-mob.jpg 1x,
+                                    ./images/portfolio/project/mobile/project-09-mob@2x.jpg 2x" type="image/jpg">
+                                    <img src="./images/portfolio/project/mobile/project-09-mob.jpg" alt="" width="450" height="294">
+                                </picture>
+                                
                                 <p class="overlay__item">
 
                                 </p>
@@ -229,60 +444,63 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-address">
-                <a class="logo logo--in-footer link" href="./index.html"><span class="logo__web">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address__list list">
-                        <li class="address__item">
-                            <a class="address__link link" href="https://goo.gl/maps/npCChXU9xTYnC5Zz8" target="_blank"
-                                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="footer-address-social">
+                <div class="footer-address">
+                    <a class="logo logo--in-footer link" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address__list list">
+                            <li class="address__item">
+                                <a class="address__link link" href="https://goo.gl/maps/npCChXU9xTYnC5Zz8" target="_blank"
+                                    rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__item link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__item link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h2 class="join-social">присоединяйтесь</h2>
+                    <ul class="social-media list">
+                        <li class="social-media__item link">
+                            <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="social-media__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__item link" href="mailto:info@example.com">info@example.com</a>
+                        <li class="social-media__item link">
+                            <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="social-media__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__item link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="social-media__item link">
+                            <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="social-media__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media__item link">
+                            <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="social-media__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="footer-social">
-                <h2 class="join-social">присоединяйтесь</h2>
-                <ul class="social-media list">
-                    <li class="social-media__item link">
-                        <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="social-media__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media__item link">
-                        <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="social-media__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media__item link">
-                        <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="social-media__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media__item link">
-                        <a class="social-media__link social-media__link--footer-position" href="" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="social-media__icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    
             <div class="footer-submit">
                 <form class="submit-form" name="submit-form" autocomplete="on" novalidate>
                     <label class="submit-form__group">
@@ -299,6 +517,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

@@ -1,22 +1,35 @@
 .logo {
+  font-family: var(--secondary-font);
 
-    font-family: var(--secondary-font);
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
-    &--in-header {
-            margin-right: 93px;
-            color: #000000;
-        }
-    
-        &--in-footer {
-            display: block;
-            color: var(--white-clr);
-            margin-right: 0px;
-            margin-bottom: 20px;
-        }
-    
-        &__web {
-            color: var(--accent-clr);
-        }
+  }
+  &--in-header {
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+
+    color: #000000;
+  }
+
+  &--in-footer {
+    display: block;
+    color: var(--white-clr);
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  &__web {
+    color: var(--accent-clr);
+  }
 }
 

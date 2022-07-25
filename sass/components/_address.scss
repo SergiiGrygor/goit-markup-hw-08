@@ -3,6 +3,10 @@
 
     &__item:not(:last-child) {
             margin-bottom: 9px;
+            @media screen and (min-width:480px) and (max-width:1199px) {
+                 margin-bottom: 8px;
+                
+            }
         }
     
     
