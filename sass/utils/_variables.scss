@@ -14,7 +14,7 @@
     --card-ov-bg: rgba(33, 150, 243, 0.9);
     /* other */
     --items: 3;
-    @media screen and (min-width:480px) and (max-width:767px){
+    @media screen and  (max-width:767px){
         --items:1;
     }
 

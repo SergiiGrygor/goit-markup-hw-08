@@ -1,163 +1,171 @@
 .form {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
 }
 
 .form__header {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color: #212121;
+     @media screen and (max-width: 768px){
+         line-height: 1.44;
+    }
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #212121;
 }
 
 .form__list {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form__item {
-    position: relative;
-
+  position: relative;
 }
 
 .form__item:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .form__input {
-    outline: transparent;
-    cursor: pointer;
-    min-height: 40px;
-    width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding-left: 42px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  outline: transparent;
+  cursor: pointer;
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:focus {
-    border: 1px solid #2196F3;
-    border-radius: 4px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
-.form__input:focus+.form__icon {
-    outline: transparent;
-    fill: var(--accent-clr);
+.form__input:focus + .form__icon {
+  outline: transparent;
+  fill: var(--accent-clr);
 }
 
 .form__lable {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: #757575;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .form__icon {
-    outline: transparent;
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    padding: 3px;
-    width: 18px;
-    height: 18px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  outline: transparent;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  padding: 3px;
+  width: 18px;
+  height: 18px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* modal-style */
 
-
-
 .form__textarea:focus {
-    border: 1px solid #2196F3;
-    border-radius: 4px;
-    outline: transparent;
-    fill: var(--accent-clr);
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  outline: transparent;
+  fill: var(--accent-clr);
 }
 
 .form__textarea {
-    display: block;
-    cursor: pointer;
-    resize: none;
-    width: 100%;
-    height: 120px;
-    padding: 12px 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    outline: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  display: block;
+  cursor: pointer;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* modal checkbox */
 .form__checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    cursor: pointer;
-
+  display: block;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .form__custom-checkbox {
-    margin-right: 7px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
-    outline: 2px solid var(--basic-clr);
-    border-radius: 4px;
-    outline-offset: -2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 768px){
+         margin-right: 0;
+    }
+  margin-right: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  outline: 2px solid var(--basic-clr);
+  border-radius: 4px;
+  outline-offset: -2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__checkbox-input:checked+.form__custom-checkbox {
-    outline-color: var(--accent-clr);
-    background-color: var(--accent-clr);
+.form__checkbox-input:checked + .form__custom-checkbox {
+  outline-color: var(--accent-clr);
+  background-color: var(--accent-clr);
 }
 
 .form__checkbox-icon {
-
-    fill: var(--white-clr);
+  fill: var(--white-clr);
 }
 
 .form__checkbox-agreement {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--secondary-clr);
-
+  @media screen and (max-width: 768px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-clr);
 }
 
 .form__checkbox-agreed {
-    font-size: 14px;
-    line-height: 1.71;
-    text-decoration-line: underline;
-    color: var(--accent-clr);
-
+  @media screen and (max-width: 768px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+  color: var(--accent-clr);
 }
 
-
 .form-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    cursor: pointer;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    padding: 10px 55px;
-    letter-spacing: 0.06em;
-    color: var(--white-clr);
-    background-color: var(--accent-clr);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding: 10px 55px;
+  letter-spacing: 0.06em;
+  color: var(--white-clr);
+  background-color: var(--accent-clr);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }

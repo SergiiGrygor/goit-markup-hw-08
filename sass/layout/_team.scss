@@ -48,10 +48,10 @@
     color: var(--secondary-clr);
   }
 
-  &__img {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+  // &__img {
+  //   @media screen and (min-width: 480px) and (max-width: 1199px) {
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //   }
+  // }
 }
