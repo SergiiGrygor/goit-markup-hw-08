@@ -1407,6 +1407,8 @@ img {
 
 .project__item {
   display: block;
+  min-width: 100%;
+  min-height: 100%;
   color: var(--basic-clr);
   border: 1px solid #eeeeee;
   -webkit-transition-property: -webkit-box-shadow;
